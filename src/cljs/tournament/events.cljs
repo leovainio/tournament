@@ -13,8 +13,13 @@
    (assoc db :active-panel active-panel)))
 
 (re-frame/reg-event-db
+ :set-user
+ (fn [db [_ user]]
+   (assoc db :users user)))
+
+(re-frame/reg-event-db
  :team-name-update
  (fn [db [_ team]]
-   (js/console.log (str "User: " team))
+   
    (assoc db :team team)
    ))

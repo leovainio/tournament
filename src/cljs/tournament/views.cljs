@@ -26,7 +26,7 @@
   (let [teams (re-frame/subscribe [:teams])]
     (fn []
       [re-com/v-box
-       :children [[team-list-item "discendum"]]]
+       :children [(for [team @teams] [team-list-item team])]]
       
       
       )))

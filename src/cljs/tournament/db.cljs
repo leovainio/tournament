@@ -3,4 +3,5 @@
 (def default-db
   {:name "re-frame"
    :teams ["discendum" "kee"]
-   :team ""})
+   :team ""
+   :users ["leo" "kissa"]})

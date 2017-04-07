@@ -13,6 +13,11 @@
    (:teams db)))
 
 (re-frame/reg-sub
+ :users
+ (fn [db]
+   (:users db)))
+
+(re-frame/reg-sub
  :team
  (fn [db]
    (:team db)))
